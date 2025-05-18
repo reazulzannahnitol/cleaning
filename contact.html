@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Title and Description for SEO -->
+    <title>Navon Cleaners - Fast & Professional Cleaning Services</title>
+    <meta name="description" content="Navon Cleaners provides fast, reliable, and professional cleaning services for homes, offices, healthcare facilities, and more. Get a free quote today!">
+    
+    <!-- Open Graph Meta Tags for Social Media -->
+    <meta property="og:title" content="Navon Cleaners - Fast & Professional Cleaning Services">
+    <meta property="og:description" content="Navon Cleaners provides fast, reliable, and professional cleaning services for homes, offices, healthcare facilities, and more. Get a free quote today!">
+    <meta property="og:image" content="https://www.navon-cleaners.com/logo.png">
+    <meta property="og:url" content="https://www.navon-cleaners.com/contact.html">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Navon Cleaners - Fast & Professional Cleaning Services">
+    <meta name="twitter:description" content="Navon Cleaners provides fast, reliable, and professional cleaning services for homes, offices, healthcare facilities, and more. Get a free quote today!">
+    <meta name="twitter:image" content="https://www.navon-cleaners.com/logo.png">
+    <meta name="twitter:site" content="@NavonCleaners">
+
+    <!-- Charset and Compatibility -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index, follow"> <!-- Allows search engines to index the page and follow links -->
+    
+    <!-- Favicon -->
+    <link rel="icon" href="logo.png" type="image/png">
+    
+    <!-- Link to External Stylesheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Additional Meta Tags for Accessibility and Compatibility -->
+    <meta name="author" content="Navon Cleaners">
+    <meta name="theme-color" content="#195972"> <!-- Theme color for browsers with a colored toolbar -->
+    <meta name="keywords" content="cleaning services, residential cleaning, commercial cleaning, professional cleaners, home cleaning, office cleaning, sanitation, eco-friendly cleaning, Navon Cleaners">
+
+    <style>
+      /* Contact Section */
+      .contact-section {
+        background-color: #f9f9f9; /* Light background */
+        padding: 60px 0; /* Add padding for spacing */
+      }
+      
+      .container {
+        max-width: 1200px; /* Limit container width */
+        margin: 0 auto; /* Center the container */
+        padding: 0 20px; /* Add padding for smaller screens */
+      }
+      
+      .contact-grid {
+        display: flex; /* Use flexbox for layout */
+        gap: 40px; /* Space between columns */
+      }
+      
+      .contact-form, .get-in-touch {
+        flex: 1; /* Equal width for both columns */
+      }
+      
+      .contact-form h2, .get-in-touch h2 {
+        font-size: 32px; /* Large heading */
+        margin-bottom: 20px; /* Spacing below heading */
+      }
+      
+      .contact-form h2 strong {
+        font-weight: bold; /* Bold "Contact" */
+      }
+      
+      /* Form Styling */
+      .form-row {
+        display: flex; /* Arrange form fields in a row */
+        gap: 20px; /* Space between fields */
+      }
+      
+      .form-group {
+        flex: 1; /* Equal width for fields in a row */
+        margin-bottom: 20px; /* Spacing between form fields */
+      }
+      
+      .form-group label {
+        display: block; /* Make labels block-level */
+        font-size: 14px; /* Label text size */
+        color: #333; /* Dark text */
+        margin-bottom: 5px; /* Spacing below label */
+      }
+      
+      .form-group input, .form-group select, .form-group textarea {
+        width: 100%; /* Full width */
+        padding: 12px; /* Padding inside inputs */
+        font-size: 16px; /* Text size */
+        border: 1px solid #ddd; /* Light border */
+        border-radius: 4px; /* Rounded corners */
+        outline: none; /* Remove default outline */
+        transition: border-color 0.3s ease; /* Smooth transition */
+      }
+      
+      .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+        border-color: #715514; /* Highlight border on focus */
+      }
+      
+      .required {
+        color: #ff0000; /* Red color for mandatory fields */
+      }
+      
+      /* Send Message Button */
+      .send-message-button {
+        background-color: #195972; /* Primary color */
+        color: white; /* White text */
+        padding: 12px 30px; /* Button padding */
+        font-size: 16px; /* Text size */
+        border: none; /* Remove border */
+        border-radius: 4px; /* Rounded corners */
+        cursor: pointer; /* Pointer cursor */
+        transition: background-color 0.3s ease; /* Smooth transition */
+      }
+      
+      .send-message-button:hover {
+        background-color: #156d93; /* Darker shade on hover */
+      }
+      
+      /* Get in Touch Section */
+      .get-in-touch p {
+        font-size: 18px; /* Increased paragraph text size */
+        color: #333; /* Dark text color for better readability */
+        margin-bottom: 20px; /* Spacing below paragraph */
+      }
+      
+      .office-info {
+        background-color: #fff; /* White background */
+        padding: 30px; /* Increased padding for more space */
+        border-radius: 8px; /* Rounded corners */
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Enhanced shadow for elegance */
+      }
+      
+      .office-info h3 {
+        font-size: 24px; /* Increased subheading size for better prominence */
+        font-weight: bold; /* Bold heading for added emphasis */
+        margin-bottom: 20px; /* Spacing below subheading */
+        color: #195972; /* Your nav bar color for consistency */
+      }
+      
+      .info-item {
+        display: flex; /* Align icon and text */
+        align-items: center; /* Vertically center */
+        gap: 15px; /* Increased space between icon and text */
+        margin-bottom: 20px; /* Spacing between items */
+      }
+      
+      .info-item i {
+        font-size: 24px; /* Larger icon size for better visibility */
+        color: #195972; /* Your nav color for icons */
+      }
+      
+      .info-item p {
+        font-size: 18px; /* Increased text size for better readability */
+        color: #333; /* Dark text color */
+        margin: 0; /* Remove default margin */
+      }
+      
+      
+      /* Responsive Design */
+      @media (max-width: 767px) {
+        .contact-grid {
+          flex-direction: column; /* Stack columns vertically */
+          gap: 20px; /* Reduce gap between stacked columns */
+        }
+      
+        .form-row {
+          flex-direction: column; /* Stack form fields vertically */
+          gap: 0; /* Remove gap between stacked fields */
+        }
+      
+        .contact-form h2, .get-in-touch h2 {
+          font-size: 28px; /* Smaller heading on mobile */
+        }
+      }
+      </style>    
+
+</head>
+<body>
+
+
+<div class="gtranslate_wrapper"></div>
+<script>window.gtranslateSettings = {"default_language":"ro","languages":["ro","en"],"wrapper_selector":".gtranslate_wrapper","flag_style":"3d"}</script>
+<script src="https://cdn.gtranslate.net/widgets/latest/float.js" defer></script>
+
+
+
+
+<!-- ✅ Desktop Navigation Bar -->
+<nav class="navbar">
+  <a href="https://www.navon-cleaners.com" class="logo">
+      <img src="logo.png" alt="Navon Cleaners Logo">
+  </a>
+
+  <ul class="nav-links">
+      <li><a href="https://www.navon-cleaners.com">Acasă</a></li>
+      <li class="dropdown">
+          <a href="#">Despre ▾</a>
+          <ul class="dropdown-menu">
+              <li><a href="index.html#about">Despre noi</a></li>
+              <li><a href="founder.html">Mesaj din partea fondatorului</a></li>
+              <li><a href="navon.html">Despre Navon Holdings</a></li>
+          </ul>
+      </li>
+      <li class="dropdown">
+          <a href="#">Serviciile noastre ▾</a>
+          <ul class="dropdown-menu">
+              <li><a href="commercial.html">✔ Curățenie Comercială</a></li>
+              <li><a href="residential.html">✔ Curățenie Rezidențială</a></li>
+              <li><a href="hospitality.html">✔ Curățenie în domeniul ospitalității</a></li>
+              <li><a href="healthcare.html">✔ Curățenie în unități de sănătate</a></li>
+              <li><a href="educational.html">✔ Curățenie în instituții educaționale</a></li>
+              <li><a href="industrial.html">✔ Curățenie Industrială & în Fabrici</a></li>
+              <li><a href="event.html">✔ Curățenie pentru Evenimente & Locații</a></li>
+              <li><a href="government.html">✔ Curățenie pentru Guvern & Sectorul Public</a></li>
+              <li><a href="construction.html">✔ Curățenie pe șantiere de construcții</a></li>
+              <li><a href="eco.html">✔ Curățenie Ecologică</a></li>
+              <li><a href="deep.html">✔ Curățenie profundă & Dezinfectare</a></li>
+              <li><a href="custom.html">✔ Planuri personalizate de curățenie</a></li>
+          </ul>
+      </li>
+      <li><a href="index.html#process">Procesul nostru de curățenie</a></li>
+      <li><a href="index.html#testimonial">Testimoniale</a></li>
+      <li><a href="faq.html">Întrebări frecvente</a></li>
+      <li class="dropdown">
+          <a href="#">ESG și implicarea comunității ▾</a>
+          <ul class="dropdown-menu">
+              <li><a href="csr.html">✔ Inițiative CSR</a></li>
+              <li><a href="emilia.html">✔ Fundația Emilia</a></li>
+          </ul>
+      </li>
+      <li><a href="blogs.html">Bloguri</a></li>
+      <li><a href="contact.html">Contactați-ne</a></li>
+  </ul>
+
+  <div class="menu-toggle" onclick="openSidebar()">
+      <i class="fas fa-bars"></i>
+  </div>
+</nav>
+
+
+
+<!-- ✅ Mobile Sidebar -->
+<div id="mobile-menu" class="mobile-menu">
+  <!-- Close button -->
+  <div class="close-btn" onclick="closeSidebar()">×</div>
+
+  <!-- MENU text -->
+  <div class="menu-text">MENU</div>
+
+  <!-- Logo -->
+  <div class="logo-container">
+      <img src="logo.png" alt="Logo" class="logo">
+  </div>
+
+  <!-- Horizontal line -->
+  <hr class="menu-divider">
+
+  <!-- Buttons -->
+  <div class="button-container">
+      <a href="quote.html" class="menu-button">
+          <i class="fas fa-file-alt"></i> Get a Free Quote
+      </a>
+      <a href="tel:+40755322690" class="menu-button">
+        <i class="fas fa-phone"></i> Call Us
+    </a>
+    
+  </div>
+
+  <!-- Navigation Links -->
+  <ul>
+    <li><a href="https://www.navon-cleaners.com">Acasă</a></li>
+    <li class="submenu">
+        <a href="#">Despre ▾</a>
+        <ul class="submenu-items">
+            <li><a href="index.html#about">Despre noi</a></li>
+            <li><a href="founder.html">Mesaj din partea fondatorului</a></li>
+            <li><a href="navon.html">Despre Navon Holdings</a></li>
+        </ul>
+    </li>
+    <li class="submenu">
+        <a href="#">Serviciile noastre ▾</a>
+        <ul class="submenu-items">
+            <li><a href="commercial.html">✔ Curățenie Comercială</a></li>
+            <li><a href="residential.html">✔ Curățenie Rezidențială</a></li>
+            <li><a href="hospitality.html">✔ Curățenie în domeniul ospitalității</a></li>
+            <li><a href="healthcare.html">✔ Curățenie în unități de sănătate</a></li>
+            <li><a href="educational.html">✔ Curățenie în instituții educaționale</a></li>
+            <li><a href="industrial.html">✔ Curățenie Industrială & în Fabrici</a></li>
+            <li><a href="event.html">✔ Curățenie pentru Evenimente & Locații</a></li>
+            <li><a href="government.html">✔ Curățenie pentru Guvern & Sectorul Public</a></li>
+            <li><a href="construction.html">✔ Curățenie pe șantiere de construcții</a></li>
+            <li><a href="eco.html">✔ Curățenie Ecologică</a></li>
+            <li><a href="deep.html">✔ Curățenie profundă & Dezinfectare</a></li>
+            <li><a href="custom.html">✔ Planuri personalizate de curățenie</a></li>
+        </ul>
+    </li>
+    <li><a href="index.html#process">Procesul nostru de curățenie</a></li>
+    <li><a href="index.html#testimonial">Testimoniale</a></li>
+    <li><a href="faq.html">Întrebări frecvente</a></li>
+    <li class="submenu">
+      <a href="#">ESG și implicarea comunității ▾</a>
+      <ul class="submenu-items">
+          <li><a href="csr.html">✔ Inițiative CSR</a></li>
+          <li><a href="emilia.html">✔ Fundația Emilia</a></li>
+      </ul>
+  </li>
+    <li><a href="blogs.html">Bloguri</a></li>
+    <li><a href="contact.html">Contactați-ne</a></li>
+  </ul>
+
+  <!-- Horizontal line -->
+  <hr class="menu-divider">
+
+  <!-- Social Media Icons -->
+  <div class="social-icons">
+      <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+  </div>
+</div>
+<div id="overlay"></div>
+
+
+
+
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+      <!-- Left Column: Contact Form -->
+      <div class="contact-form">
+        <h2><strong>Contactați</strong> Ne</h2>
+        <form>
+          <!-- First Name & Last Name -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="first-name">Prenume <span class="required">*</span></label>
+              <input type="text" id="first-name" name="first-name" required>
+            </div>
+            <div class="form-group">
+              <label for="last-name">Nume <span class="required">*</span></label>
+              <input type="text" id="last-name" name="last-name" required>
+            </div>
+          </div>
+
+          <!-- Phone & Email -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Telefon <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required>
+            </div>
+          </div>
+
+          <!-- Company Name -->
+          <div class="form-group">
+            <label for="company-name">Numele Companiei</label>
+            <input type="text" id="company-name" name="company-name">
+          </div>
+
+          <!-- Zip / Postal Code & Region -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="zip">Cod Poștal <span class="required">*</span></label>
+              <input type="text" id="zip" name="zip" required>
+            </div>
+            <div class="form-group">
+              <label for="region">Regiune <span class="required">*</span></label>
+              <input type="text" id="region" name="region" required>
+            </div>
+          </div>
+
+          <!-- Corporate Office -->
+          <div class="form-group">
+            <label for="corporate-office">Birou Corporativ <span class="required">*</span></label>
+            <input type="text" id="corporate-office" name="corporate-office" required>
+          </div>
+
+          <!-- Interested In & How did you hear about us? -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="interested-in">Interesat în <span class="required">*</span></label>
+              <select id="interested-in" name="interested-in" required>
+                <option value="">- Selectați -</option>
+                <option value="cleaning-services">Servicii de Curățenie</option>
+                <option value="consultation">Consultanță</option>
+                <option value="other">Altele</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="hear-about-us">Cum ați aflat despre noi?</label>
+              <select id="hear-about-us" name="hear-about-us">
+                <option value="">- Nimic -</option>
+                <option value="google">Google</option>
+                <option value="social-media">Rețele Sociale</option>
+                <option value="friend">Prieten</option>
+                <option value="other">Altele</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Additional Information -->
+          <div class="form-group">
+            <label for="additional-info">Informații Suplimentare</label>
+            <textarea id="additional-info" name="additional-info" rows="4"></textarea>
+          </div>
+
+          <!-- Send Message Button -->
+          <button type="submit" class="send-message-button">Trimite Mesajul</button>
+        </form>
+      </div>
+
+      <!-- Right Column: Get in Touch -->
+      <div class="get-in-touch">
+        <h2>Contactați-ne</h2>
+        <p>Oferiți un mediu mai sănătos pentru clienții și angajații dumneavoastră, solicitați astăzi ce poate face Navon Cleaners pentru dumneavoastră.</p>
+
+        <div class="office-info">
+          <h3>Biroul</h3>
+          <div class="info-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <p>București, România</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-phone"></i>
+            <p>+40 755 322 690</p>
+          </div>
+          <div class="info-item">
+            <i class="fas fa-clock"></i>
+            <p>Luni - Vineri: 9am - 5pm</p>
+            <p>Sâmbătă - Duminică: Închis</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+  
+
+
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    
+    <!-- Rând 1: Despre Navon Cleaners -->
+    <div class="row text-center mb-4">
+      <div class="col-12">
+        <p class="footer-about">
+          <strong>Navon Cleaners</strong> este partenerul tău de încredere pentru servicii profesionale de curățenie. 
+          Ne angajăm să oferim excelență, fiabilitate și soluții eco-friendly pentru locuințe și afaceri.
+        </p>
+      </div>
+    </div>
+
+    <!-- Rând 2: Iconițe sociale & Explorează mai mult -->
+    <div class="row footer-section d-flex align-items-start justify-content-between">
+      <div class="col-md-6 social-icons">
+        <h4>Urmărește-ne</h4>
+        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <div class="col-md-6 explore-more">
+        <h4>Explorează mai mult</h4>
+        <ul>
+          <li><a href="index.html#services">Serviciile noastre</a></li>
+          <li><a href="founder.html">Mesaj de la fondatori</a></li>
+          <li><a href="faq.html">Întrebări frecvente</a></li>
+          <li><a href="blogs.html">Bloguri</a></li>
+          <li><a href="quote.html">Obține o ofertă</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Rând 3: Contactează-ne -->
+    <div class="row text-center connect-with-us">
+      <div class="col-12">
+        <h4>Contactează-ne</h4>
+        <p><i class="fas fa-phone"></i> +40 755 322 690</p>
+        <p><i class="fas fa-envelope"></i> contact@navoncleaners.com</p>
+        <p><i class="fas fa-map-marker-alt"></i> București, România</p>
+      </div>
+    </div>
+
+    <!-- Rând 4: Metode de plată & GDPR -->
+    <hr class="footer-line">
+    <div class="row footer-section d-flex align-items-center justify-content-between">
+      <div class="col-md-6 payment-icons">
+        <h4>Acceptăm</h4>
+        <i class="fab fa-cc-visa"></i>
+        <i class="fab fa-cc-mastercard"></i>
+        <i class="fab fa-cc-paypal"></i>
+      </div>
+      <div class="col-md-6 text-md-end gdpr-links">
+        <a href="cookie.html">Politica de cookie-uri</a> | <a href="gdpr.html">Conformitate GDPR</a>
+      </div>
+    </div>
+
+    <!-- Rând 5: Drepturi de autor -->
+    <div class="row text-center footer-bottom">
+      <div class="col-12">
+        <p>&copy; 2025 Navon Cleaners. Toate drepturile rezervate.</p>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
